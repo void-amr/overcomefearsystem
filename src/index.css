@@ -5,99 +5,104 @@
 /* 
  * 10 Days to Action - Design System
  * A bold, aggressive, action-oriented dark theme
- * Inspired by military fitness apps and productivity trackers
+ * Designed to trigger immediate action and emotional response
  */
 
 @layer base {
   :root {
-    /* Core - Pure black foundation */
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    /* Core - Deep black foundation */
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
 
-    /* Card surfaces - Zinc tones */
-    --card: 240 6% 10%;
-    --card-foreground: 0 0% 100%;
+    /* Card surfaces - Elevated with depth */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
 
     /* Popover */
-    --popover: 240 6% 10%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Primary - Aggressive red */
-    --primary: 0 72% 51%;
+    /* Primary - Intense crimson */
+    --primary: 0 84% 60%;
     --primary-foreground: 0 0% 100%;
+    
+    /* Primary glow variants */
+    --primary-glow: 0 100% 65%;
+    --primary-dim: 0 72% 45%;
 
-    /* Secondary - Subtle zinc */
-    --secondary: 240 4% 16%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Warm dark */
+    --secondary: 0 5% 12%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Muted - For subtle elements */
-    --muted: 240 4% 16%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 0 3% 15%;
+    --muted-foreground: 0 0% 55%;
 
-    /* Accent */
-    --accent: 0 72% 51%;
+    /* Accent - Hot amber for highlights */
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Success - For completed tasks */
-    --success: 142 76% 36%;
+    /* Success - Vibrant green */
+    --success: 142 76% 45%;
     --success-foreground: 0 0% 100%;
 
     /* Border and input */
-    --border: 240 4% 16%;
-    --input: 240 4% 16%;
-    --ring: 0 72% 51%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 0 84% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     /* Surface variants */
-    --surface-dim: 240 6% 7%;
-    --surface-bright: 240 6% 10%;
-    --surface-elevated: 240 4% 16%;
+    --surface-dim: 0 0% 5%;
+    --surface-bright: 0 0% 10%;
+    --surface-elevated: 0 0% 14%;
 
     /* Sidebar */
-    --sidebar-background: 240 6% 10%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 0 72% 51%;
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 84% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 4% 16%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 0 72% 51%;
+    --sidebar-accent: 0 5% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 84% 60%;
   }
 
-  /* Dark mode is the default and only mode for this app */
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-    --card: 240 6% 10%;
-    --card-foreground: 0 0% 100%;
-    --popover: 240 6% 10%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 0 72% 51%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 84% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 4% 16%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 240 4% 16%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 0 72% 51%;
+    --primary-glow: 0 100% 65%;
+    --primary-dim: 0 72% 45%;
+    --secondary: 0 5% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 3% 15%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 240 4% 16%;
-    --input: 240 4% 16%;
-    --ring: 0 72% 51%;
-    --sidebar-background: 240 6% 10%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 0 72% 51%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 0 84% 60%;
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 84% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 4% 16%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 0 72% 51%;
+    --sidebar-accent: 0 5% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 84% 60%;
   }
 }
 
@@ -111,18 +116,32 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
+  /* Subtle noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.015;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    z-index: 9999;
+  }
+
   /* Custom scrollbar for dark theme */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    background: hsl(var(--surface-dim));
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
     background: hsl(var(--muted));
-    border-radius: 4px;
+    border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -131,88 +150,220 @@
 }
 
 @layer components {
-  /* Hero title styling */
+  /* Hero title styling - Dramatic impact */
   .text-hero {
-    @apply text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight;
+    @apply text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter;
     color: hsl(var(--primary));
+    text-shadow: 
+      0 0 40px hsl(var(--primary) / 0.4),
+      0 0 80px hsl(var(--primary) / 0.2);
   }
 
-  /* Quote styling */
+  /* Quote styling - Responsive and impactful */
   .text-quote {
-    @apply text-2xl sm:text-3xl font-bold italic;
+    @apply font-bold italic leading-tight break-words;
+    font-size: clamp(1.25rem, 4vw, 2rem);
     color: hsl(var(--primary));
+    text-shadow: 0 0 30px hsl(var(--primary) / 0.3);
   }
 
-  /* Card with glow effect on hover */
+  /* Urgent tagline */
+  .text-urgent {
+    @apply text-lg sm:text-xl font-medium tracking-wide;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Glow card effect */
   .card-glow {
     @apply transition-all duration-300;
+    position: relative;
+  }
+
+  .card-glow::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary) / 0.2) 0%,
+      transparent 50%,
+      hsl(var(--primary) / 0.1) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .card-glow:hover::before {
+    opacity: 1;
   }
 
   .card-glow:hover {
-    box-shadow: 0 0 20px -5px hsl(var(--primary) / 0.3);
+    box-shadow: 
+      0 0 30px -10px hsl(var(--primary) / 0.4),
+      0 25px 50px -12px hsl(0 0% 0% / 0.5);
+    transform: translateY(-2px);
   }
 
   /* Task checkbox container */
   .task-row {
-    @apply flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-all duration-200;
-    @apply hover:bg-secondary/50;
+    @apply flex items-center gap-4 p-4 rounded-xl cursor-pointer transition-all duration-200;
+    @apply bg-secondary/30 hover:bg-secondary/60 border border-transparent hover:border-border;
   }
 
   .task-row:active {
     transform: scale(0.98);
   }
 
-  /* Progress segment */
+  /* Progress segment with glow */
   .progress-segment {
-    @apply h-2 w-10 sm:w-12 rounded-full transition-all duration-300;
+    @apply h-3 rounded-full transition-all duration-500;
+    width: clamp(24px, 8vw, 48px);
   }
 
   .progress-segment-complete {
-    @apply bg-primary;
+    background: linear-gradient(90deg, hsl(var(--primary-dim)), hsl(var(--primary)));
+    box-shadow: 0 0 12px hsl(var(--primary) / 0.5);
   }
 
   .progress-segment-incomplete {
     background: hsl(var(--surface-elevated));
   }
 
+  .progress-segment-current {
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.6);
+  }
+
   /* Day card states */
   .day-card {
-    @apply border rounded-lg overflow-hidden transition-all duration-300;
+    @apply border rounded-xl overflow-hidden transition-all duration-300;
   }
 
   .day-card-current {
-    @apply border-primary bg-card;
-    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.3);
+    @apply bg-card;
+    border: 2px solid hsl(var(--primary));
+    box-shadow: 
+      0 0 0 4px hsl(var(--primary) / 0.15),
+      0 0 40px -10px hsl(var(--primary) / 0.4);
   }
 
   .day-card-past {
-    @apply border-border bg-card/50;
+    @apply border-border bg-card/60 hover:bg-card/80;
   }
 
   .day-card-future {
-    @apply border-border/50 bg-card/30 opacity-50 pointer-events-none;
+    @apply border-border/30 bg-card/20 opacity-40 pointer-events-none;
+  }
+
+  /* Quote banner */
+  .quote-banner {
+    @apply relative overflow-hidden rounded-2xl p-6 sm:p-8;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--card)) 0%,
+      hsl(var(--secondary)) 100%
+    );
+    border: 1px solid hsl(var(--border));
+  }
+
+  .quote-banner::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 180px;
+    font-family: Georgia, serif;
+    color: hsl(var(--primary) / 0.08);
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  /* CTA button glow */
+  .btn-cta {
+    @apply relative overflow-hidden;
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dim)));
+    box-shadow: 
+      0 4px 20px hsl(var(--primary) / 0.4),
+      inset 0 1px 0 hsl(var(--primary-glow) / 0.3);
+  }
+
+  .btn-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--primary-glow) / 0.3),
+      transparent
+    );
+    animation: shimmer 2s infinite;
+  }
+
+  .btn-cta:hover {
+    box-shadow: 
+      0 6px 30px hsl(var(--primary) / 0.5),
+      inset 0 1px 0 hsl(var(--primary-glow) / 0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-cta:active {
+    transform: translateY(0);
   }
 
   /* Input focus states */
   .input-action {
-    @apply bg-surface-dim border-border focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200;
+    @apply bg-surface-dim border-border/50 transition-all duration-300;
+  }
+
+  .input-action:focus {
+    @apply border-primary ring-2 ring-primary/20;
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.15);
+  }
+
+  /* Countdown urgency badge */
+  .badge-urgent {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+    background: hsl(var(--primary) / 0.15);
+    color: hsl(var(--primary));
+    border: 1px solid hsl(var(--primary) / 0.3);
   }
 }
 
 @layer utilities {
   /* Fade animations */
   .animate-fade-in {
-    animation: fadeIn 300ms ease-out forwards;
+    animation: fadeIn 400ms ease-out forwards;
   }
 
   .animate-fade-out {
     animation: fadeOut 300ms ease-out forwards;
   }
 
+  .animate-fade-up {
+    animation: fadeUp 500ms ease-out forwards;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -231,17 +382,66 @@
     }
   }
 
-  /* Pulse animation for CTA */
-  .animate-pulse-subtle {
-    animation: pulseSlight 2s ease-in-out infinite;
+  /* Shimmer animation for CTA */
+  @keyframes shimmer {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 
-  @keyframes pulseSlight {
+  /* Pulse animation for current day */
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 
+        0 0 20px hsl(var(--primary) / 0.4),
+        inset 0 1px 0 hsl(var(--primary-glow) / 0.3);
+    }
+    50% {
+      box-shadow: 
+        0 0 40px hsl(var(--primary) / 0.6),
+        inset 0 1px 0 hsl(var(--primary-glow) / 0.5);
+    }
+  }
+
+  /* Subtle float animation */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Urgent pulse for incomplete tasks */
+  .animate-urgent {
+    animation: urgent 1.5s ease-in-out infinite;
+  }
+
+  @keyframes urgent {
     0%, 100% {
       opacity: 1;
     }
     50% {
-      opacity: 0.85;
+      opacity: 0.7;
     }
   }
+
+  /* Stagger children animation delays */
+  .stagger-1 { animation-delay: 100ms; }
+  .stagger-2 { animation-delay: 200ms; }
+  .stagger-3 { animation-delay: 300ms; }
+  .stagger-4 { animation-delay: 400ms; }
+  .stagger-5 { animation-delay: 500ms; }
 }
