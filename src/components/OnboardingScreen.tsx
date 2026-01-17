@@ -24,19 +24,19 @@ const OnboardingScreen = memo(function OnboardingScreen({ onComplete }: Onboardi
     const newErrors: typeof errors = {};
     
     if (!quote.trim()) {
-      newErrors.quote = 'You need a battle cry';
+      newErrors.quote = 'Quote that will push you through...';
     } else if (quote.trim().length > 200) {
       newErrors.quote = 'Keep it under 200 characters';
     }
     
     if (!skill.trim()) {
-      newErrors.skill = 'What are you fighting for?';
+      newErrors.skill = 'What skill you want to learn?';
     } else if (skill.trim().length > 200) {
       newErrors.skill = 'Keep it under 200 characters';
     }
     
     if (!distraction.trim()) {
-      newErrors.distraction = 'Name your enemy';
+      newErrors.distraction = 'What are you afraid of?';
     } else if (distraction.trim().length > 200) {
       newErrors.distraction = 'Keep it under 200 characters';
     }
