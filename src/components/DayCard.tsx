@@ -103,8 +103,7 @@ const DayCard = memo(function DayCard({
 
   // Dynamic task labels with user's skill/distraction
   const taskLabels = useMemo(() => ({
-    learnSkill: `Spend 15 min learning ${skill}`,
-    avoidDistraction: `Avoid ${distraction} for 1 hour`,
+    learnSkill: `learn | create ${skill}`,
     documentProgress: TASK_LABELS.documentProgress,
   }), [skill, distraction]);
 
@@ -184,11 +183,6 @@ const DayCard = memo(function DayCard({
                 label={taskLabels.learnSkill}
                 checked={dayData.tasks.learnSkill}
                 onChange={(checked) => onTaskChange({ learnSkill: checked })}
-              />
-              <TaskCheckbox
-                label={taskLabels.avoidDistraction}
-                checked={dayData.tasks.avoidDistraction}
-                onChange={(checked) => onTaskChange({ avoidDistraction: checked })}
               />
               <TaskCheckbox
                 label={taskLabels.documentProgress}
