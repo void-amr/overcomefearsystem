@@ -98,7 +98,7 @@ const OnboardingScreen = memo(function OnboardingScreen({ onComplete }: Onboardi
             <div className="space-y-3 animate-fade-up stagger-1 opacity-0" style={{ animationFillMode: 'forwards' }}>
               <Label htmlFor="quote" className="flex items-center gap-2 text-sm font-semibold text-foreground">
                 <Sparkles className="w-4 h-4 text-primary" />
-                Your Battle Cry
+                Your Favourite quote to stay consistent.
               </Label>
               <Input
                 id="quote"
@@ -119,7 +119,7 @@ const OnboardingScreen = memo(function OnboardingScreen({ onComplete }: Onboardi
             <div className="space-y-3 animate-fade-up stagger-2 opacity-0" style={{ animationFillMode: 'forwards' }}>
               <Label htmlFor="skill" className="flex items-center gap-2 text-sm font-semibold text-foreground">
                 <Target className="w-4 h-4 text-primary" />
-                What You're Fighting For
+                What skill you want to learn?
               </Label>
               <Input
                 id="skill"
@@ -140,7 +140,7 @@ const OnboardingScreen = memo(function OnboardingScreen({ onComplete }: Onboardi
             <div className="space-y-3 animate-fade-up stagger-3 opacity-0" style={{ animationFillMode: 'forwards' }}>
               <Label htmlFor="distraction" className="flex items-center gap-2 text-sm font-semibold text-foreground">
                 <Shield className="w-4 h-4 text-primary" />
-                Your Enemy
+                What's holding you back?
               </Label>
               <Input
                 id="distraction"
