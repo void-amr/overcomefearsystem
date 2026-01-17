@@ -24,15 +24,15 @@ const QuoteBanner = memo(function QuoteBanner({ quote, skill, distraction }: Quo
         </p>
       </div>
       
-      {/* Goal and Obstacle - Visual separation */}
+      {/* Goal and Obstacle - Full text display, no truncation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-border/50">
         <div className="flex items-start gap-4 p-4 rounded-xl bg-background/30 hover:bg-background/50 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-success/20 flex items-center justify-center flex-shrink-0">
             <Target className="w-5 h-5 text-success" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <p className="text-xs uppercase tracking-wider text-muted-foreground font-medium mb-1">Fighting for</p>
-            <p className="font-semibold text-foreground break-words">{skill}</p>
+            <p className="font-semibold text-foreground whitespace-normal" style={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}>{skill}</p>
           </div>
         </div>
         
@@ -40,9 +40,9 @@ const QuoteBanner = memo(function QuoteBanner({ quote, skill, distraction }: Quo
           <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
             <Sword className="w-5 h-5 text-primary" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <p className="text-xs uppercase tracking-wider text-muted-foreground font-medium mb-1">Defeating</p>
-            <p className="font-semibold text-foreground break-words">{distraction}</p>
+            <p className="font-semibold text-foreground whitespace-normal" style={{ wordBreak: 'break-word', overflowWrap: 'anywhere' }}>{distraction}</p>
           </div>
         </div>
       </div>
